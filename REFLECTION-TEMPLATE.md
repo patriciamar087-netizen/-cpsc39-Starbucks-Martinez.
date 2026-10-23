@@ -44,9 +44,9 @@ Starting latitude/longitude:
 
 | Filter | Rank | Store ID / name | Distance in miles |
 |---|---:|---|---:|
-| All stores | 1 | | |
-| All stores | 2 | | |
-| All stores | 3 | | |
+| All stores | 1 | Main Place - Merced  |  0.08    |
+| All stores | 2 | | 580 West Olive - Merced |1.20
+| All stores | 3 | |  Childs & Hwy 99 - Merced |1.84
 | Drive-through only | 1 |Childs & Hwy 99 - Merced |1.84 |
 | Drive-through only | 2 |Bellevue & Shaffer - Atwater |7.32 |
 | Drive-through only | 3 | Applegate & Hwy 99 - Atwater|7.83 |
