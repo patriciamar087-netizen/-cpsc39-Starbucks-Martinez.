@@ -41,21 +41,40 @@ All 12 SortCheck tests pass.
 
 Starting latitude/longitude:
 
-| Filter | Rank | Store ID / name | Distance in miles |
-|---|---:|---|---:|
-| All stores | 1 | Main Place - Merced  |  0.08    |
-| All stores | 2 | | 580 West Olive - Merced |1.20
-| All stores | 3 | |  Childs & Hwy 99 - Merced |1.84
-| Drive-through only | 1 |Childs & Hwy 99 - Merced |1.84 |
-| Drive-through only | 2 |Bellevue & Shaffer - Atwater |7.32 |
-| Drive-through only | 3 | Applegate & Hwy 99 - Atwater|7.83 |
+All Stores
+
+1. Main Place - Merced (0.08 miles)
+2. 580 West Olive - Merced (1.20 miles)
+3. Childs & Hwy 99 - Merced (1.84 miles)
+
+Drive-Through Only
+
+1. Childs & Hwy 99 - Merced (1.84 miles)
+2. Bellevue & Shaffer - Atwater (7.32 miles)
+3. Applegate & Hwy 99 - Atwater (7.83 miles)
+
+
+   student mode
+
+   Student-Mode First Three Results
+
+Drive-Through Only
+
+1. Childs & Hwy 99 - Merced (1.84 miles)
+2. Bellevue & Shaffer - Atwater (7.32 miles)
+3. Applegate & Hwy 99 - Atwater (7.83 miles)
+
 
 What changed, and why would alphabetical order not answer this search?
 The drive-through filter removes stores that do not have drive-through service, so the nearest results may change. Alphabetical sorting would arrange stores by name rather than distance. Since the goal is to find the closest Starbucks locations, the stores must be sorted by distance, not by store name.
 ## Hand trace: merge [2, 7] and [3, 5]
 
-[2, 3, 5, 7]
 
+Step	Compared Values	Item Copied	Buffer So Far
+1	2 vs 3	2	[2]
+2	7 vs 3	3	[2, 3]
+3	7 vs 5	5	[2, 3, 5]
+4	Right side empty	7	[2, 3, 5, 7]
 
 ## Validation
 
@@ -110,7 +129,7 @@ The MapPreviewServer class creates a local web server that runs on the user's co
 
 When the user opens http://localhost:8080/student-map.html, the browser sends a request to the local server. The serve() method receives the request, locates the generated HTML map file, and sends it back to the browser. The browser then displays the Starbucks locations and ranked search results on an interactive map.
 
-For example, after running Student Mode in CaffeineQuest.java, the program generates student-map.html. When the browser requests this file through localhost, the preview server retrieves the file from the output folder and displays it. This allows Java-generate
+For example, after running Student Mode in CaffeineQuest.java, the program generates student-map.html. When the browser requests this file through localhost, the preview server retrieves the file from the output folder and displays it.This allows Java-generated results to be viewed as a web page without requiring an external website or internet hosting service.
 Source consulted (title and URL or course reference):
 Java SE Documentation: HttpServer
 https://docs.oracle.com/en/java/javase/11/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpServer.html
