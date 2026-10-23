@@ -47,9 +47,9 @@ Starting latitude/longitude:
 | All stores | 1 | | |
 | All stores | 2 | | |
 | All stores | 3 | | |
-| Drive-through only | 1 | | |
-| Drive-through only | 2 | | |
-| Drive-through only | 3 | | |
+| Drive-through only | 1 |Childs & Hwy 99 - Merced |1.84 |
+| Drive-through only | 2 |Bellevue & Shaffer - Atwater |7.32 |
+| Drive-through only | 3 | Applegate & Hwy 99 - Atwater|7.83 |
 
 What changed, and why would alphabetical order not answer this search?
 The drive-through filter removes stores that do not have drive-through service, so the nearest results may change. Alphabetical sorting would arrange stores by name rather than distance. Since the goal is to find the closest Starbucks locations, the stores must be sorted by distance, not by store name.
